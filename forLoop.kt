@@ -12,7 +12,7 @@ fun main(){
         println(i)
     }
     println("10 to 1 numbers two steps chhod ke")
-    for(i in 10 downTo 1){//isme ham last se bhi two step chhod ke number print krwa skte he
+    for(i in 10 downTo 1 step 2){//isme ham last se bhi two step chhod ke number print krwa skte he
         println(i)
     }
 }

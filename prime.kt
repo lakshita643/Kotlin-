@@ -1,16 +1,24 @@
 fun main(){
-    print("Enter number:")
-    var number=readLine()!!.toInt()
-    var n=2
-    while(number>=n){
-        if(number/n==0){
-            print("Number is Not prime")
-            n++
-        }
-        else{
-            print("Number is Prime")
+    print("Enter a number to check prime number :")
+    var a=readLine()!!.toInt()
+    var isPrime=true
+    if(a<=1){
+        isPrime=false
+    }
+    else{
+        for(i in 2 until a){
+            if(a%i==0){
+                isPrime=false
+                break
+            }
         }
 
+    }
+    if(isPrime){
+        println("Number is Prime!")
+    }
 
+    else{
+        println("Number is not Prime!")
     }
 }

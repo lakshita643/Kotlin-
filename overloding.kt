@@ -1,7 +1,7 @@
 fun addition(x:Int,y:Int):Int{
     return x+y
 }
-fun addition(x:Double,y:Double):Double{
+fun addition(x:Double,y:Double):Double{//It is a function overloding same name ka function but parameters alg alg .
     return x+y
 }
 fun main(){

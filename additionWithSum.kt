@@ -3,6 +3,6 @@ fun add(num1:Int,num2:Int):Int{
     return sum
 }
 fun main(){
-    val result=add(4,5)
+    val result=add(4,5)//giveing parameters
     println(result)
 }

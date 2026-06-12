@@ -1,22 +1,10 @@
 fun main(){
-    print("Enter that number do you want to factorial:")
+    print("Enter the Number:")
     var n=readLine()!!.toInt()
-    var isPrime= true
-    if(n<=1){
-        isPrime=false
-    }
-    else{
-        for(i in 2 until n){
-            if(n%i==0){
-                isPrime=false
-                break
-            }
+    var factorial=1
+    for(i in 1..n){
+        factorial=factorial*i
         }
-    }
-    if(isPrime){
-        println("Number is Prime!")
-    }
-    else{
-        println("Number is not Prime!")
-    }
+    println("Factorial of $n is $factorial")
+
 }
