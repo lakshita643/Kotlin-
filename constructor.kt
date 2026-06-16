@@ -1,4 +1,4 @@
-class Automobile(val name:String,val tyres:Int,val maxString:Int){
+class Automobile(val name:String,val tyres:Int,val maxString:Int){//primary constructor
     fun drive(){
        println("Car is Good!") 
     }
