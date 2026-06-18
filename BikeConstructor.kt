@@ -1,6 +1,6 @@
-class Bike(var name:String,var cc:Int,var price:Int){
-    constructor(price:Int)
-    :this("Hero Splendor Plus",99)
+class Bike(var name:String,var cc:Int,var price:Int){//primary constructor
+    constructor(name:String,cc:Int)//secondary constructor
+    :this(name,cc,100000)
     fun displyaInfo(){
         println("Name of the Bike is: $name")
         println("Bike cc is: $cc")
@@ -17,8 +17,6 @@ fun main(){
     var price=readLine()!!.toInt()
     var bike1=Bike(bike,cC,price)
     bike1.displyaInfo()
-    print("Enter Bike Price: ")
-    var a=readLine()!!.toInt()
-    var bike2=Bike(a)
+    var bike2=Bike(bike,cC)
     bike2.displyaInfo()
 }
